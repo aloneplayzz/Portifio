@@ -3,7 +3,7 @@ import ProfileSection from "@/components/ProfileSection";
 import TechStackSection from "@/components/TechStackSection";
 import WorkProcessSection from "@/components/WorkProcessSection";
 import ServicesSection from "@/components/ServicesSection";
-import ContactSection from "@/components/ContactSection";
+import ContactFormSection from "@/components/ContactFormSection";
 
 export default function Portfolio() {
   return (
@@ -13,7 +13,7 @@ export default function Portfolio() {
       <TechStackSection />
       <WorkProcessSection />
       <ServicesSection />
-      <ContactSection />
+      <ContactFormSection />
     </div>
   );
 }

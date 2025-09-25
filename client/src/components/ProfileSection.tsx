@@ -36,18 +36,20 @@ export default function ProfileSection() {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 animate-slide-up">
-              <button 
-                className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors duration-300 shadow-lg hover:shadow-xl"
-                data-testid="button-know-about-me"
+              <a 
+                href="/blog"
+                className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors duration-300 shadow-lg hover:shadow-xl text-center"
+                data-testid="button-view-portfolio"
               >
-                Know About Me
-              </button>
-              <button 
-                className="border border-border px-8 py-3 rounded-lg font-medium hover:bg-accent hover:text-accent-foreground transition-all duration-300"
+                View Portfolio
+              </a>
+              <a 
+                href="#contact"
+                className="border border-border px-8 py-3 rounded-lg font-medium hover:bg-accent hover:text-accent-foreground transition-all duration-300 text-center"
                 data-testid="button-contact-me"
               >
                 Contact Me
-              </button>
+              </a>
             </div>
           </div>
         </div>
