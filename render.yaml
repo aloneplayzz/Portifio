@@ -2,6 +2,11 @@ services:
   - type: web
     name: portifio
     env: node
+    buildCommand: npm ci && NODE_ENV=production npm run build
+    startCommand: NODE_ENV=production npm startes:
+  - type: web
+    name: portifio
+    env: node
     buildCommand: npm ci && npm run build
     startCommand: npm start
     envVars:
