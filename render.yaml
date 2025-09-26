@@ -2,8 +2,11 @@ services:
   - type: web
     name: portifio
     env: node
-    buildCommand: npm ci && NODE_ENV=production npm run build
-    startCommand: NODE_ENV=production npm startes:
+    buildCommand: npm install --production=false && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: productiones:
   - type: web
     name: portifio
     env: node
