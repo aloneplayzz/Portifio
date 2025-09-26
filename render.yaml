@@ -3,7 +3,6 @@ services:
     name: portifio
     env: node
     buildCommand: npm install && npm run build
-    postBuildCommand: npm install drizzle-kit && npm install drizzle-orm && npx drizzle-kit generate
     startCommand: npm start
     envVars:
       - key: NODE_ENV
@@ -13,17 +12,3 @@ services:
       - key: DATABASE_URL
         sync: false
     healthCheckPath: /health
-    buildFilter:
-      paths:
-      - client/**
-      - server/**
-      - shared/**
-      - migrations/**
-      - package.json
-      - package-lock.json
-      - tsconfig.json
-      - vite.config.ts
-    disk:
-      name: tmp
-      mountPath: /tmp
-    autoDeploy: true

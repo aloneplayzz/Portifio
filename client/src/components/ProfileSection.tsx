@@ -26,7 +26,7 @@ export default function ProfileSection() {
             
             {/* Developer Name */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 gradient-text animate-fade-in" data-testid="developer-name">
-              RISIN
+              R I S I N 
             </h1>
             
             {/* Bio */}

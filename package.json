@@ -8,18 +8,11 @@
     "build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
     "start": "NODE_ENV=production node dist/index.js",
     "check": "tsc",
-    "db:push": "drizzle-kit push:pg",
+    "db:push": "drizzle-kit push",
     "db:generate": "drizzle-kit generate:pg",
-    "db:migrate": "tsx migrations/migrate.ts",
-    "postinstall": "npm run db:generate"
+    "db:migrate": "tsx migrations/migrate.ts"
   },
   "dependencies": {
-    "@vitejs/plugin-react": "^4.7.0",
-    "esbuild": "^0.25.0",
-    "drizzle-kit": "^0.31.5",
-    "typescript": "5.6.3",
-    "tsx": "^4.20.5",
-    "@types/node": "20.16.11",
     "@hookform/resolvers": "^3.10.0",
     "@jridgewell/trace-mapping": "^0.3.25",
     "@neondatabase/serverless": "^0.10.4",
