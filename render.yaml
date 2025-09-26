@@ -12,3 +12,17 @@ services:
       - key: DATABASE_URL
         sync: false
     healthCheckPath: /health
+    buildFilter:
+      paths:
+      - client/**
+      - server/**
+      - shared/**
+      - migrations/**
+      - package.json
+      - package-lock.json
+      - tsconfig.json
+      - vite.config.ts
+    disk:
+      name: tmp
+      mountPath: /tmp
+    autoDeploy: true
