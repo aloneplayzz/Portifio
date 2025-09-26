@@ -5,6 +5,11 @@ import { insertContactSubmissionSchema, insertPostSchema, insertTestimonialSchem
 import { z } from "zod";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Health check endpoint for Render
+  app.get("/health", (_req, res) => {
+    res.json({ status: "ok" });
+  });
+
   // Contact form submission
   app.post("/api/contact", async (req, res) => {
     try {
