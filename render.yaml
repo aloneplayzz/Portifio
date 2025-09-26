@@ -2,15 +2,7 @@ services:
   - type: web
     name: portifio
     env: node
-    buildCommand: chmod +x build.sh && ./build.sh
-    startCommand: npm start
-    envVars:
-      - key: NODE_ENV
-        value: productiones:
-  - type: web
-    name: portifio
-    env: node
-    buildCommand: npm ci && npm run build
+    buildCommand: npm install && npm run build
     startCommand: npm start
     envVars:
       - key: NODE_ENV
