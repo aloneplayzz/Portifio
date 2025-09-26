@@ -23,8 +23,8 @@ export default function NavigationBar() {
   const navItems = [
     { href: "/", label: "Home" },
     { href: "/projects", label: "Projects" },
-    { href: "/about", label: "About" },
-    { href: "/contact", label: "Contact" },
+    { href: "#profile", label: "About" },
+    { href: "#contact", label: "Contact" },
   ];
 
   return (
