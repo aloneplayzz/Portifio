@@ -4,7 +4,7 @@ export default function ProfileSection() {
       {/* Animated Banner */}
       <div className="w-full h-64 md:h-80 lg:h-96 overflow-hidden relative">
         <img 
-          src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=400" 
+          src="https://cdn.discordapp.com/banners/1382744437049790495/a_45bf7a42a014c00f4ca3a71bad1a6a30.gif?size=512" 
           alt="Animated coding banner with matrix effects" 
           className="w-full h-full object-cover"
           data-testid="banner-image"
@@ -18,7 +18,7 @@ export default function ProfileSection() {
           <div className="flex flex-col items-center text-center">
             {/* Profile Avatar */}
             <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=512&h=512" 
+              src="https://cdn.discordapp.com/avatars/1329052943084683338/3abc4382a545419f84426836aa6d5740.png?size=4096" 
               alt="RISIN developer avatar" 
               className="w-32 h-32 rounded-full border-4 border-primary shadow-lg animate-float mb-6"
               data-testid="profile-avatar"
