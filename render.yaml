@@ -2,7 +2,7 @@ services:
   - type: web
     name: portifio
     env: node
-    buildCommand: npm install && npm run build
+    buildCommand: npm install && npx drizzle-kit generate:pg && npm run build
     startCommand: npm start
     envVars:
       - key: NODE_ENV
